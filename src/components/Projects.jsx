@@ -8,25 +8,25 @@ const Projects = () => {
   let propertyFinder = {
     title: "Property Finder",
     backgroundImg: PropertyImg,
-    projectUrl: "/property",
+    projectUrl: "../pages/property",
     tech: "React JS",
   };
   let Crypto = {
     title: "Crypto App",
     backgroundImg: CryptoImg,
-    projectUrl: "/crypto",
+    projectUrl: "../pages/crypto",
     tech: "React JS",
   };
   let netflixApp = {
     title: "Netflix App",
     backgroundImg: NetflixImg,
-    projectUrl: "/netflix",
+    projectUrl: "../pages/netflix",
     tech: "React JS",
   };
   let twitchUi = {
     title: "Twitch UI",
     backgroundImg: TwitchImg,
-    projectUrl: "/twitch",
+    projectUrl: "../pages/twitch",
     tech: "Next JS",
   };
   return (

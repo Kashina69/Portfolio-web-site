@@ -1,7 +1,8 @@
-import AboutImg from "../images/about.jpg";
+// import AboutImg from "../images/about.jpg";
+import SoloLeveling from '../images/solo leveling .jpeg'
 const About = () => {
   return (
-    <div id="about" className="w-full md:h-screen p-3 pb-16 flex items-center">
+    <div id="about" className="animate-[fade-in-up_2s_ease-in-out] w-full md:h-screen p-3 pt-24 flex items-center">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 ">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">
@@ -26,8 +27,8 @@ const About = () => {
             <a href="/#projects">Check out some of my latest projects.</a>
           </p>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl mt-20 mb-16 md:mt-0 shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-          <img src={AboutImg} className="rounded-xl" alt="/" />
+        <div className="w-full h-auto m-auto group shadow-xl bg-gradient-to-r from-[#28313B] to-[#4f565d] mt-20 mb-16 md:mt-0 shadow-gray-400 rounded-xl flex items-center justify-center overflow-hidden ">
+          <img src={SoloLeveling} className="rounded-xl hover:opacity-50 hover:scale-105 ease-in opacity-20 duration-300"  alt="https://i.pinimg.com/564x/cb/5a/8c/cb5a8c8f771e54347982136ebedcdbeb.jpg" loading='lazy'  />
         </div>
       </div>
     </div>

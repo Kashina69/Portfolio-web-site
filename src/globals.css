@@ -18,7 +18,6 @@ body {
   scrollbar-track-color: aqua;
 }
 html {
-  scroll-behavior: smooth;
   font-family: 'Raleway', sans-serif;
   scroll-behavior: smooth;
   scrollbar-width: thin;

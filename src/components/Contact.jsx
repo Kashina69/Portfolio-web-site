@@ -6,6 +6,8 @@ import {
   FaInstagram,
   FaDiscord,
 } from "react-icons/fa";
+import {MdAttachEmail} from 'react-icons/md'
+import {GrDocumentDownload} from 'react-icons/gr'
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import ContactImg from "../images/contact.jpg";
 
@@ -26,6 +28,7 @@ const Contact = () => {
                   className="rounded-xl hover:scale-105 ease-in duration-300"
                   src={ContactImg}
                   alt="/"
+                  loading='lazy'
                 />
               </div>
               <div>
@@ -37,7 +40,7 @@ const Contact = () => {
               </div>
               <div>
                 <p className="uppercase pt-8">Connect With Me</p>
-                <div className="flex items-center flex-wrap justify-between py-4">
+                <div className=" sm:flex  gap-2 grid grid-flow-col justify-evenly grid-rows-2 py-4 ">
                   <a
                     href="www.linkedin.com/in/prince-rawat-web-developer"
                     target="_blank"
@@ -82,12 +85,14 @@ const Contact = () => {
                     </div>
                   </a>
                 </div>
-                <div className="sm:flex justify-center ">
-                  <button className="sm:w-2/3 w-full p-4 mr-1 text-gray-100 mt-4">
+                <div className="sm:flex justify-center mt-7 ">
+                  <button className="sm:w-2/3 w-full p-4 mr-1 text-gray-100 font-semibold text-sm gap-1 justify-between mt-4 flex">
                     Download CV
+                    <GrDocumentDownload/>
                   </button>
-                  <button className="sm:w-2/3 w-full p-4 ml-1 text-gray-100 mt-4">
+                  <button className="sm:w-2/3 w-full p-4 ml-1 text-gray-100 font-semibold text-sm gap-1 justify-between mt-4 flex">
                     Download Resume
+                    <GrDocumentDownload/>
                   </button>
                 </div>
               </div>
@@ -142,21 +147,22 @@ const Contact = () => {
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea
                     className="border-2 rounded-lg p-3 border-gray-300"
-                    rows="10"
+                    rows="9"
                     name="message"
                   ></textarea>
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4">
+                <button className="w-full p-4 text-gray-100 flex justify-evenly items-center mt-4">
                   Send Message
+                  <MdAttachEmail/>
                 </button>
               </form>
             </div>
           </div>
         </div>
         <div className="flex justify-center py-12">
-          <a href="/">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-              <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30} />
+          <a href="#home">
+            <div className="rounded-full shadow-lg shadow-gray-400 animate-bounce p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+              <HiOutlineChevronDoubleUp className="text-[#5651e5] " size={30} />
             </div>
           </a>
         </div>
