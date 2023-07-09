@@ -1,6 +1,5 @@
 
 const ProjectItem = (projectData) => {
-  console.log(projectData.projectUrl)
   return (
     <div id="projectItem" className='relative overflow-hidden flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#6661ef] to-[#709dff]'>
     <img className='rounded-xl group-hover:opacity-40 hover:scale-105 ease-in opacity-20 duration-300' src={projectData.backgroundImg} alt='/' loading='lazy' /> 

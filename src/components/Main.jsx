@@ -2,6 +2,8 @@ import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode, SiReplit } from "react-icons/si";
 
+const socialLinkDiv = "rounded-full  shadow-lg group bg-slate-200 shadow-gray-400 sm:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
+const socialLink = "group-hover:scale-125 ease-in md:duration-150 duration-75"
 const Main = () => {
   return (
     <div id="home" className="w-full h-screen text-center ">
@@ -21,12 +23,12 @@ const Main = () => {
           <div className="flex items-center justify-between max-w-[330px] m-auto gap-2 py-4">
             <a
               title="Linkedin"
-              href="www.linkedin.com/in/prince-rawat-web-developer"
+              href="http://www.linkedin.com/in/prince-rawat-web-developer"
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full  shadow-lg group bg-slate-200 shadow-gray-400 sm:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaLinkedinIn className="group-hover:scale-125 ease-in duration-150" />
+              <div className={socialLinkDiv}>
+                <FaLinkedinIn className={socialLink} />
               </div>
             </a>
             <a
@@ -35,8 +37,8 @@ const Main = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-lg  group bg-slate-200 shadow-gray-400 sm:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaGithub className="group-hover:scale-125 ease-in duration-150" />
+              <div className={socialLinkDiv}>
+                <FaGithub className={socialLink} />
               </div>
             </a>
             <a
@@ -45,8 +47,8 @@ const Main = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-lg group bg-slate-200 shadow-gray-400 sm:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                <AiOutlineMail className="group-hover:scale-125 ease-in duration-150" />
+              <div className={socialLinkDiv}>
+                <AiOutlineMail className={socialLink} />
               </div>
             </a>
             <a
@@ -55,8 +57,8 @@ const Main = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-lg group bg-slate-200 shadow-gray-400 sm:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                <SiLeetcode className="group-hover:scale-125 ease-in duration-150" />
+              <div className={socialLinkDiv}>
+                <SiLeetcode className={socialLink} />
               </div>
             </a>
             <a
@@ -65,8 +67,8 @@ const Main = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-lg group bg-slate-200 shadow-gray-400 sm:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                <SiReplit className="group-hover:scale-125 ease-in duration-150" />
+              <div className={socialLinkDiv}>
+                <SiReplit className={socialLink} />
               </div>
             </a>
           </div>

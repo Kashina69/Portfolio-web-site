@@ -1,4 +1,3 @@
-// import AboutImg from "../images/about.jpg";
 import SoloLeveling from '../images/solo leveling .jpeg'
 const About = () => {
   return (
@@ -27,7 +26,7 @@ const About = () => {
             <a href="/#projects">Check out some of my latest projects.</a>
           </p>
         </div>
-        <div className="w-full h-auto m-auto group shadow-xl bg-gradient-to-r from-[#28313B] to-[#4f565d] mt-20 mb-16 md:mt-0 shadow-gray-400 rounded-xl flex items-center justify-center overflow-hidden ">
+        <div className="w-full transform-gpu h-auto m-auto group shadow-xl bg-gradient-to-r from-[#28313B] to-[#4f565d] mt-20 mb-16 md:mt-0 shadow-gray-400 rounded-xl flex items-center justify-center overflow-hidden ">
           <img src={SoloLeveling} className="rounded-xl hover:opacity-50 hover:scale-105 ease-in opacity-20 duration-300"  alt="https://i.pinimg.com/564x/cb/5a/8c/cb5a8c8f771e54347982136ebedcdbeb.jpg" loading='lazy'  />
         </div>
       </div>
